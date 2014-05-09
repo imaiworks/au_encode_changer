@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !(jpg|gif|png|js|css|ico)$
+RewriteCond %{QUERY_STRING}     !changetrue=(.*)$
+RewriteRule ^(.*)$ au_enc_change.php [QSA,L]
+
+</IfModule>

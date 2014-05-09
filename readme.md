@@ -19,13 +19,13 @@ mod_rewriteでフックさせてコンテンツをSHIFT-JISに変換するだけ
 <IfModule mod_rewrite.c>  
 RewriteEngine On  
 RewriteBase /  
-
-RewriteCond %{REQUEST_FILENAME} !(.(jpg|gif|png|js|css|ico))$
-RewriteCond %{QUERY_STRING}     !changetrue=(.*)$
-RewriteRule ^(.*)$ changer.php [QSA,L]
-
-</IfModule>
-
+  
+RewriteCond %{REQUEST_FILENAME} !(.(jpg|gif|png|js|css|ico))$  
+RewriteCond %{QUERY_STRING}     !changetrue=(.*)$  
+RewriteRule ^(.*)$ changer.php [QSA,L]  
+  
+</IfModule>  
+  
 以上です
 
 大したコードではないのですが、一応BSD licenceとしておきます

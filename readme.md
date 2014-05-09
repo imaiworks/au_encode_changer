@@ -12,9 +12,9 @@ mod_rewriteでフックさせてコンテンツをSHIFT-JISに変換するだけ
   
   
 使用例  
-１．changer.phpを置く
-２．.htaccess等に以下のように書く
-  （このままだとすべてshift-jis変換するのでUA判定するrewrite_condを入れたほうがいいでしょう）
+１．changer.phpを置く  
+２．.htaccess等に以下のように書く  
+  （このままだとすべてshift-jis変換するのでUA判定するrewrite_condを入れたほうがいいでしょう）  
   
 <IfModule mod_rewrite.c>  
 RewriteEngine On  
@@ -28,8 +28,8 @@ RewriteRule ^(.*)$ changer.php [QSA,L]
   
 以上です
 
-大したコードではないのですが、一応BSD licenceとしておきます
-ご自由にお使いください
-
-(c)2014 imaiworks
+大したコードではないのですが、一応BSD licenceとしておきます  
+ご自由にお使いください  
+  
+(c)2014 imaiworks  
 
